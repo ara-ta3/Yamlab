@@ -35,7 +35,7 @@
    <script src="scripts/modernizr-2.6.1.min.js"></script>
 </head>
 
-<body data-accent="blue">
+<body data-accent="green">
    <!-- Header ================================================== -->
    <header id="nav-bar" class="container-fluid">
       <div class="row-fluid">
@@ -43,6 +43,17 @@
             <div id="header-container">
                <a id="backbutton" class="win-backbutton" href="./index.html"></a>
                <h5>Yamaguti Lab</h5>
+               <div class="dropdown">
+                  <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">
+                     Start
+                     <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a href="./javascript.html">Bootstrap Javascript</a></li>
+                     <li class="divider"></li>
+                     <li><a href="../index.html">Home</a></li>
+                  </ul>
+               </div>
             </div>
          </div>
          <div id="top-info" class="pull-right">
@@ -51,7 +62,7 @@
                <h3>Guest</h3>
             </div>
             <div class="top-info-block">
-               <b class="icon-user"></b>
+               <b class="icon-user-2"></b>
             </div>
          </a>
          <hr class="separator pull-left"/>
@@ -73,45 +84,49 @@
    
                   <a class="tile wide imagetext bg-color-blueDark" href="./tiles-templates.html">
                      <div class="image-wrapper">
-                        <img src="content/img/metro-tiles.jpg" />
+                        <span class="icon icon-user"></span>
                      </div>
                      <div class="column-text">
-                        <div class="text4">メンバー紹介</div>
+                        <div class="text4">山口研究室には愉快なメンバーがたくさんいます.</div>
                      </div>
-                     <div class="app-label">Members</div>
+                     <div class="app-label">メンバー紹介</div>
                   </a>
    
-                  <a class="tile app wide bg-color-greenDark" href="./table.html">
+                  <a class="tile wide imagetext bg-color-purple" href="./listviews.html">
                      <div class="image-wrapper">
-                        <img src="content/img/My Apps.png" alt=""/>
+                        <img src="assets/img/info.png" />
                      </div>
-                     <div class="app-label">研究室紹介PDF</div>
-                  </a>
-   
-                  <a class="tile app bg-color-purple" href="./listviews.html">
-                     <div class="image-wrapper">
-                        <span class="icon icon-list-2"></span>
+                     <div class="column-text">
+                        <div class="text4">現在，当研究室では様々な研究テーマに取り組んでいます．</div>
                      </div>
                      <span class="app-label">プロジェクト紹介</span>
+                  </a>
+
+   
+                  <a class="tile app bg-color-red" href="./table.html">
+                     <div class="image-wrapper">
+                        <span class="icon icon-file-pdf"></span>
+                     </div>
+                     <span class="app-label">研究室紹介PDF</span>
                   </a>
    
                   <a class="tile app bg-color-red" href="./charms-demo.html">
                      <div class="image-wrapper">
-                        <span class="icon icon-publish"></span>
+                        <span class="icon icon-location"></span>
                      </div>
                      <span class="app-label">アクセス</span>
                   </a>
    
                   <a class="tile app bg-color-yellow" href="./images.html">
                      <div class="image-wrapper">
-                        <span class="icon icon-images"></span>
+                        <span class="icon icon-play"></span>
                      </div>
                      <span class="app-label">研究室紹介ビデオ</span>
                   </a>
    
                   <a class="tile app bg-color-blueDark" href="./icons.html">
                      <div class="image-wrapper">
-                        <span class="icon icon-IcoMoon" ></span>
+                        <span class="icon icon-newspaper" ></span>
                      </div>
                      <span class="app-label">ニュース</span>
                   </a>
@@ -123,13 +138,19 @@
                      <span class="app-label">ゲーム</span>
                   </a>
    
-                  <a class="tile app bg-color-red" href="./javascript.html">
+                  <a class="tile app bg-color-purple" href="./javascript.html">
                      <div class="image-wrapper">
-                        <img src="content/img/Devices.png" alt="" />
+                        <span class="icon icon-twitter" ></span>
                      </div>
                      <span class="app-label">Twitter</span>
                   </a>
    
+               </div>
+               <div id="section2" class="metro-section tile-span-4">
+                  <a class="twitter-timeline"  href="https://twitter.com/YamLabTA"  data-widget-id="250186041644957696">@YamLabTA からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
                </div>
             </div>
          </div>
@@ -165,10 +186,8 @@
    </div>
 
    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write("<script src='scripts/jquery-1.8.2.min.js'>\x3C/script>")</script>
-
-   <script type="text/javascript" src="scripts/google-code-prettify/prettify.js"></script>
+   <script src="scripts/jquery-1.8.2.min.js"></script>
+   
    <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
    <script type="text/javascript" src="scripts/jquery.scrollTo.js"></script>
    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
