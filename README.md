@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BootMetro
 
 
@@ -62,3 +63,7 @@ The framework integrate and extend the work first done by other great people:
    
 * [Tile image sizes](http://msdn.microsoft.com/en-us/library/windows/apps/hh781198.aspx)
 
+=======
+Yamlab
+======
+>>>>>>> fa24914f8c2e18c7b2e4bc967e452442b3256a5a
